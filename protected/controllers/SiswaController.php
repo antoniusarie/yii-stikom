@@ -73,18 +73,14 @@ class SiswaController extends Controller
 		if(isset($_POST['Siswa']))
 		{
 
-			// $random = rand(0,9999);
-			// $time = time();
-			
 			$model->attributes=$_POST['Siswa'];
 			$uploadFile=CUploadedFile::getInstance($model,'images');
-			// $fileName = "{$random}-{$uploadFile}";  // random number + file name
 
-			// Validation if file is empty
+			// Validation if file is empty fill with = default.png
 			if(!empty($uploadFile)){
 			     $random = rand(0,9999);
 			     $time = time();  
-			     $fileName = $random."-".$time.".".$uploadFile->getExtensionName();  // random number + time 
+			     $fileName = $random."-".$time.".".$uploadFile->getExtensionName();  // random number + time + ext
 			 } else {
 			     $fileName = 'default.png';	
 			 }
@@ -97,7 +93,7 @@ class SiswaController extends Controller
 					$uploadFile->saveAs(dirname(Yii::app()->request->scriptFile).'/images/'.$fileName);
 				}
 				// $this->redirect(array('view','id'=>$model->no_siswa));
-				$this->redirect(array('admin'));
+				$this->redirect(array('admin')); // redirect ke page admin
 			}
 		}
 
@@ -124,7 +120,7 @@ class SiswaController extends Controller
 			$model->attributes=$_POST['Siswa'];
 			$uploadFile=CUploadedFile::getInstance($model,'images');
 			if($model->save()){
-				if(!empty($uploadFile))  // check if uploaded file is set or not
+				if(!empty($uploadFile)) 
 				{
 					$uploadFile->saveAs(dirname(Yii::app()->request->scriptFile).'/images/'.$model->images);
 				}
