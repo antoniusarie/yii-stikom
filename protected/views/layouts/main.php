@@ -44,7 +44,7 @@
 	<div id="mainmenu">
 		<?php
 		$user = Yii::app()->user;
-		$this->widget('application.components.dbMenu', array(
+		$this->widget('application.components.DbMenu', array(
 			'items'=>array(
 			array(
 					'label'=>'Log In', 

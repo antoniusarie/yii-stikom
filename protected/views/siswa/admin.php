@@ -60,7 +60,6 @@ $('.search-form form').submit(function(){
 			'header'=>'Lokasi Kelas',
 			'value'=>'CHtml::encode($data->relasikelas->keterangan)',
 		),
-		// 'kode_kelas',
 		array(
 			'name'=>'namaJurusan',
 			'type'=>'raw',
@@ -73,7 +72,6 @@ $('.search-form form').submit(function(){
 			'header'=>'Program Studi',
 			'value'=>'CHtml::encode($data->relasiprodi->prodi)',
 		),
-		// 'jurusan',
 		array(
 			'class'=>'CButtonColumn',
 			'header'=>'Tindakan'
