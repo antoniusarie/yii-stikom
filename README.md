@@ -1,5 +1,6 @@
 # yii-stikom
 Web Base Programming berbasis php framework Yii
+
 (STIKOM Binaniaga Bogor)
 
 # informasi
@@ -11,11 +12,17 @@ Web Base Programming berbasis php framework Yii
 
 3. Database ada 7 tabel :
     > user
+
     > menu
+
     > siswa
+
     > gender
+
     > kelas
+
     > jurusan
+
     > prodi
 
 4. Implementasi Access Control Login yg sederhana, login based dari tabel user
@@ -23,12 +30,14 @@ Web Base Programming berbasis php framework Yii
 6. Relasi tabel siswa ke tabel gender, kelas, jurusan, prodi 
 7. User role ada 2 saja:
     > admin
+
     > user
 
 # Tambahan
 1. Menu Siswa bisa upload/kelola foto/gambar
 2. Login dengan role admin:
     > username = stikom
+    
     > password = stikom
 
 # Penutup
