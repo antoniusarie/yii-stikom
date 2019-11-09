@@ -1,0 +1,28 @@
+/* Custom CSS */
+.navbar{
+	/* background: url(bg.gif) repeat-x scroll left top white; */
+	background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+}
+
+.navbar .nav li a {
+    color: #333333 !important;
+    font-weight: normal !important;
+    text-shadow: none !important;
+}
+
+.dbmenu li a {
+    border-right: white solid 2px;
+}
+
+.navbar .nav li a:hover {
+    background: lightgrey !important;
+}
+
+.navbar .nav li a:focus, .navbar .nav li a:active, 
+.navbar .nav li a:visited {
+    background-color: transparent !important;
+}
+
+.dropdown-menu li a:hover,  .dropdown-menu li a:focus {
+    background-color: transparent !important;
+}

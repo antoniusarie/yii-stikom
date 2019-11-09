@@ -32,14 +32,14 @@ class Menu extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('label', 'required'),
-			array('url, position', 'unique'),
+			array('position', 'unique'),
 			array('status, position', 'numerical', 'integerOnly'=>true),
 			array('label, description', 'length', 'max'=>255),
-			array('url', 'length', 'max'=>128),
+			array('url, icon', 'length', 'max'=>128),
 			array('created_date, updated_date', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('menu_id, label, status, position, url, description, created_date, updated_date', 'safe', 'on'=>'search'),
+			array('menu_id, label, status, position, url, icon, description, created_date, updated_date', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,6 +65,7 @@ class Menu extends CActiveRecord
 			'status' => 'Status',
 			'position' => 'Urutan',
 			'url' => 'URL',
+			'icon' => 'Icon',
 			'description' => 'Deskripsi',
 			'created_date' => 'Created Date',
 			'updated_date' => 'Updated Date',
@@ -94,6 +95,7 @@ class Menu extends CActiveRecord
 		$criteria->compare('status',$this->status);
 		$criteria->compare('position',$this->position);
 		$criteria->compare('url',$this->url,true);
+		$criteria->compare('icon',$this->icon,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('created_date',$this->created_date,true);
 		$criteria->compare('updated_date',$this->updated_date,true);

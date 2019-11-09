@@ -18,6 +18,32 @@ $this->menu=array(
 
 <h1>View Menu #<?php echo $model->menu_id; ?></h1>
 
+<div class="clearfix">
+<?php
+$this->widget('zii.widgets.CMenu', array(
+	'items' => array(
+		array(
+			'label' => '<i class="fas fa-cogs"></i> Operations',
+			'url' => '#',
+			'linkOptions'=> array(
+				'class' => 'btn btn-default dropdown-toggle',
+				'data-toggle' => 'dropdown',
+			),
+			'itemOptions' => array('class'=>'dropdown user'),
+			'items' => $this->menu,
+		),
+	),
+	'encodeLabel' => false,
+	'htmlOptions' => array(
+		'class'=>'nav pull-right',
+	),
+	'submenuHtmlOptions' => array(
+		'class' => 'dropdown-menu pull-right',
+		)
+	));
+?>	
+</div>
+
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
@@ -26,6 +52,7 @@ $this->menu=array(
 		'status',
 		'position',
 		'url',
+		'icon',
 		'description',
 		'created_date',
 		'updated_date',

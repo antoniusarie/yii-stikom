@@ -4936,3 +4936,1832 @@ Stack trace:
 REQUEST_URI=/index.php?r=site/about
 HTTP_REFERER=http://stikom.arie.id/index.php?r=site/page&view=about
 ---
+2019/11/03 08:32:23 [warning] [application] Failed to set unsafe attribute "images" of "Siswa".
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (76)
+in C:\laragon\www\stikom\index.php (13)
+2019/11/03 08:38:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/03 08:38:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jurusan/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=jurusan/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/03 08:38:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodi/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prodi/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 10:44:21 [error] [exception.CException] exception 'CException' with message 'Property "dbMenu.class" is not defined.' in C:\laragon\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('class', 'bootstrap.widge...')
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(MenuController), 'application.com...', Array)
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('application.com...', Array)
+#3 C:\laragon\www\stikom\themes\bootstrap\views\layouts\main.php(54): CBaseController->widget('application.com...', Array)
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#7 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="row...')
+#8 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="row...')
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\laragon\www\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\laragon\www\stikom\themes\bootstrap\views\layouts\column2.php(24): CBaseController->endContent()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#13 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#14 C:\laragon\www\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#15 C:\laragon\www\stikom\protected\controllers\MenuController.php(148): CController->render('admin', Array)
+#16 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): MenuController->actionAdmin()
+#17 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#26 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/admin')
+#27 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php?r=menu/admin
+HTTP_REFERER=http://localhost/index.php?r=user/admin
+---
+2019/11/09 10:50:42 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbNavbar, application.components.DbMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\laragon\www\yii\framework\YiiBase.php:330
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(MenuController), 'bootstrap.widge...', Array)
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\laragon\www\stikom\themes\bootstrap\views\layouts\main.php(58): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#7 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="row...')
+#8 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="row...')
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\laragon\www\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\laragon\www\stikom\themes\bootstrap\views\layouts\column2.php(24): CBaseController->endContent()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#13 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#14 C:\laragon\www\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#15 C:\laragon\www\stikom\protected\controllers\MenuController.php(148): CController->render('admin', Array)
+#16 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): MenuController->actionAdmin()
+#17 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#26 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/admin')
+#27 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php?r=menu/admin
+HTTP_REFERER=http://localhost/index.php?r=user/admin
+---
+2019/11/09 10:50:50 [error] [php] Invalid argument supplied for foreach() (C:\laragon\www\yii\framework\web\CWidgetFactory.php:160)
+Stack trace:
+#0 C:\laragon\www\stikom\themes\bootstrap\views\layouts\main.php(58): MenuController->widget()
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#3 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): MenuController->renderFile()
+#4 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#5 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#6 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#7 C:\laragon\www\yii\framework\web\CBaseController.php(309): MenuController->endWidget()
+#8 C:\laragon\www\stikom\themes\bootstrap\views\layouts\column2.php(24): MenuController->endContent()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#10 C:\laragon\www\yii\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#11 C:\laragon\www\yii\framework\web\CController.php(787): MenuController->renderFile()
+#12 C:\laragon\www\stikom\protected\controllers\MenuController.php(148): MenuController->render()
+#13 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): MenuController->actionAdmin()
+#14 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): MenuController->runAction()
+#16 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#18 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#19 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#20 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\laragon\www\yii\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#22 C:\laragon\www\yii\framework\web\CWebApplication.php(282): MenuController->run()
+#23 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=menu/admin
+in C:\laragon\www\stikom\themes\bootstrap\views\layouts\main.php (58)
+in C:\laragon\www\stikom\themes\bootstrap\views\layouts\column2.php (24)
+in C:\laragon\www\stikom\protected\controllers\MenuController.php (148)
+2019/11/09 11:02:34 [error] [php] Trying to get property of non-object (C:\laragon\www\stikom\protected\extensions\bootstrap\widgets\TbNavbar.php:169)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#2 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): MenuController->renderFile()
+#3 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#4 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#6 C:\laragon\www\yii\framework\web\CBaseController.php(309): MenuController->endWidget()
+#7 C:\laragon\www\stikom\themes\bootstrap\views\layouts\column2.php(24): MenuController->endContent()
+#8 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#10 C:\laragon\www\yii\framework\web\CController.php(787): MenuController->renderFile()
+#11 C:\laragon\www\stikom\protected\controllers\MenuController.php(148): MenuController->render()
+#12 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): MenuController->actionAdmin()
+#13 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): MenuController->runAction()
+#15 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#17 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#18 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\laragon\www\yii\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#21 C:\laragon\www\yii\framework\web\CWebApplication.php(282): MenuController->run()
+#22 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=menu/admin
+in C:\laragon\www\stikom\protected\extensions\bootstrap\widgets\TbNavbar.php (169)
+in C:\laragon\www\stikom\themes\bootstrap\views\layouts\main.php (58)
+in C:\laragon\www\stikom\themes\bootstrap\views\layouts\column2.php (24)
+2019/11/09 11:02:34 [error] [php] Trying to get property of non-object (C:\laragon\www\stikom\protected\extensions\bootstrap\widgets\TbNavbar.php:169)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#2 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): MenuController->renderFile()
+#3 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#4 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#6 C:\laragon\www\yii\framework\web\CBaseController.php(309): MenuController->endWidget()
+#7 C:\laragon\www\stikom\themes\bootstrap\views\layouts\column2.php(24): MenuController->endContent()
+#8 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#10 C:\laragon\www\yii\framework\web\CController.php(787): MenuController->renderFile()
+#11 C:\laragon\www\stikom\protected\controllers\MenuController.php(148): MenuController->render()
+#12 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): MenuController->actionAdmin()
+#13 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): MenuController->runAction()
+#15 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#17 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#18 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\laragon\www\yii\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#21 C:\laragon\www\yii\framework\web\CWebApplication.php(282): MenuController->run()
+#22 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=menu/admin
+in C:\laragon\www\stikom\protected\extensions\bootstrap\widgets\TbNavbar.php (169)
+in C:\laragon\www\stikom\themes\bootstrap\views\layouts\main.php (58)
+in C:\laragon\www\stikom\themes\bootstrap\views\layouts\column2.php (24)
+2019/11/09 11:03:22 [error] [php] Trying to get property of non-object (C:\laragon\www\stikom\protected\extensions\bootstrap\widgets\TbNavbar.php:166)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#2 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): MenuController->renderFile()
+#3 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#4 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#6 C:\laragon\www\yii\framework\web\CBaseController.php(309): MenuController->endWidget()
+#7 C:\laragon\www\stikom\themes\bootstrap\views\layouts\column2.php(24): MenuController->endContent()
+#8 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#10 C:\laragon\www\yii\framework\web\CController.php(787): MenuController->renderFile()
+#11 C:\laragon\www\stikom\protected\controllers\MenuController.php(148): MenuController->render()
+#12 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): MenuController->actionAdmin()
+#13 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): MenuController->runAction()
+#15 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#17 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#18 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\laragon\www\yii\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#21 C:\laragon\www\yii\framework\web\CWebApplication.php(282): MenuController->run()
+#22 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=menu/admin
+in C:\laragon\www\stikom\protected\extensions\bootstrap\widgets\TbNavbar.php (166)
+in C:\laragon\www\stikom\themes\bootstrap\views\layouts\main.php (58)
+in C:\laragon\www\stikom\themes\bootstrap\views\layouts\column2.php (24)
+2019/11/09 11:03:56 [error] [php] Trying to get property of non-object (C:\laragon\www\stikom\protected\extensions\bootstrap\widgets\TbNavbar.php:166)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#2 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): MenuController->renderFile()
+#3 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#4 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#6 C:\laragon\www\yii\framework\web\CBaseController.php(309): MenuController->endWidget()
+#7 C:\laragon\www\stikom\themes\bootstrap\views\layouts\column2.php(24): MenuController->endContent()
+#8 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#10 C:\laragon\www\yii\framework\web\CController.php(787): MenuController->renderFile()
+#11 C:\laragon\www\stikom\protected\controllers\MenuController.php(148): MenuController->render()
+#12 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): MenuController->actionAdmin()
+#13 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): MenuController->runAction()
+#15 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#17 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#18 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\laragon\www\yii\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#21 C:\laragon\www\yii\framework\web\CWebApplication.php(282): MenuController->run()
+#22 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=menu/admin
+in C:\laragon\www\stikom\protected\extensions\bootstrap\widgets\TbNavbar.php (166)
+in C:\laragon\www\stikom\themes\bootstrap\views\layouts\main.php (58)
+in C:\laragon\www\stikom\themes\bootstrap\views\layouts\column2.php (24)
+2019/11/09 12:57:49 [error] [exception.CException] exception 'CException' with message 'SiswaController has an extra endWidget(CContentDecorator) call in its view.' in C:\laragon\www\yii\framework\web\CBaseController.php:219
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#1 C:\laragon\www\stikom\protected\views\layouts\column1.php(13): CBaseController->endContent()
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#4 C:\laragon\www\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#5 C:\laragon\www\stikom\protected\controllers\SiswaController.php(174): CController->render('admin', Array)
+#6 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiswaController->actionAdmin()
+#7 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#16 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#17 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php?r=menu/admin
+---
+2019/11/09 13:12:57 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\laragon\www\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\helpers\CHtml.php(163): renderAttributes()
+#1 C:\laragon\www\yii\framework\web\helpers\CHtml.php(427): tag()
+#2 C:\laragon\www\stikom\protected\views\siswa\admin.php(41): link()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiswaController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\CController.php(872): SiswaController->renderFile()
+#6 C:\laragon\www\yii\framework\web\CController.php(785): SiswaController->renderPartial()
+#7 C:\laragon\www\stikom\protected\controllers\SiswaController.php(174): SiswaController->render()
+#8 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiswaController->actionAdmin()
+#9 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): SiswaController->runAction()
+#11 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#13 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): SiswaController->filterAccessControl()
+#14 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#15 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\laragon\www\yii\framework\web\CController.php(265): SiswaController->runActionWithFilters()
+#17 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiswaController->run()
+#18 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=siswa/admin
+in C:\laragon\www\stikom\protected\views\siswa\admin.php (41)
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (174)
+in C:\laragon\www\stikom\index.php (13)
+2019/11/09 13:19:38 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\laragon\www\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\helpers\CHtml.php(163): renderAttributes()
+#1 C:\laragon\www\yii\framework\web\helpers\CHtml.php(427): tag()
+#2 C:\laragon\www\stikom\protected\views\siswa\admin.php(42): link()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiswaController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\CController.php(872): SiswaController->renderFile()
+#6 C:\laragon\www\yii\framework\web\CController.php(785): SiswaController->renderPartial()
+#7 C:\laragon\www\stikom\protected\controllers\SiswaController.php(174): SiswaController->render()
+#8 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiswaController->actionAdmin()
+#9 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): SiswaController->runAction()
+#11 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#13 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): SiswaController->filterAccessControl()
+#14 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#15 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\laragon\www\yii\framework\web\CController.php(265): SiswaController->runActionWithFilters()
+#17 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiswaController->run()
+#18 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=siswa/admin
+in C:\laragon\www\stikom\protected\views\siswa\admin.php (42)
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (174)
+in C:\laragon\www\stikom\index.php (13)
+2019/11/09 13:22:30 [error] [exception.CException] exception 'CException' with message 'Property "CPortlet.class" is not defined.' in C:\laragon\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('class', 'btn btn-info')
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiswaController), 'zii.widgets.CPo...', Array)
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(198): CBaseController->createWidget('zii.widgets.CPo...', Array)
+#3 C:\laragon\www\stikom\protected\views\layouts\column1.php(8): CBaseController->beginWidget('zii.widgets.CPo...', Array)
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#6 C:\laragon\www\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#7 C:\laragon\www\stikom\protected\controllers\SiswaController.php(174): CController->render('admin', Array)
+#8 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiswaController->actionAdmin()
+#9 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#18 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#19 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+---
+2019/11/09 13:24:13 [error] [exception.CException] exception 'CException' with message 'Property "CPortlet.class" is not defined.' in C:\laragon\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('class', 'btn btn-info')
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiswaController), 'zii.widgets.CPo...', Array)
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(198): CBaseController->createWidget('zii.widgets.CPo...', Array)
+#3 C:\laragon\www\stikom\protected\views\layouts\column1.php(8): CBaseController->beginWidget('zii.widgets.CPo...', Array)
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#6 C:\laragon\www\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#7 C:\laragon\www\stikom\protected\controllers\SiswaController.php(174): CController->render('admin', Array)
+#8 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiswaController->actionAdmin()
+#9 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#18 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#19 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+---
+2019/11/09 13:26:14 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (C:\laragon\www\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\helpers\CHtml.php(163): renderAttributes()
+#1 C:\laragon\www\yii\framework\web\helpers\CHtml.php(427): tag()
+#2 C:\laragon\www\stikom\protected\views\siswa\admin.php(35): link()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiswaController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\CController.php(872): SiswaController->renderFile()
+#6 C:\laragon\www\yii\framework\web\CController.php(785): SiswaController->renderPartial()
+#7 C:\laragon\www\stikom\protected\controllers\SiswaController.php(174): SiswaController->render()
+#8 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiswaController->actionAdmin()
+#9 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): SiswaController->runAction()
+#11 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#13 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): SiswaController->filterAccessControl()
+#14 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#15 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\laragon\www\yii\framework\web\CController.php(265): SiswaController->runActionWithFilters()
+#17 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiswaController->run()
+#18 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=siswa/admin
+in C:\laragon\www\stikom\protected\views\siswa\admin.php (35)
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (174)
+in C:\laragon\www\stikom\index.php (13)
+2019/11/09 13:26:53 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (C:\laragon\www\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\helpers\CHtml.php(163): renderAttributes()
+#1 C:\laragon\www\yii\framework\web\helpers\CHtml.php(427): tag()
+#2 C:\laragon\www\stikom\protected\views\siswa\admin.php(38): link()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiswaController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\CController.php(872): SiswaController->renderFile()
+#6 C:\laragon\www\yii\framework\web\CController.php(785): SiswaController->renderPartial()
+#7 C:\laragon\www\stikom\protected\controllers\SiswaController.php(174): SiswaController->render()
+#8 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiswaController->actionAdmin()
+#9 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): SiswaController->runAction()
+#11 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#13 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): SiswaController->filterAccessControl()
+#14 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#15 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\laragon\www\yii\framework\web\CController.php(265): SiswaController->runActionWithFilters()
+#17 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiswaController->run()
+#18 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=siswa/admin
+in C:\laragon\www\stikom\protected\views\siswa\admin.php (38)
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (174)
+in C:\laragon\www\stikom\index.php (13)
+2019/11/09 13:27:19 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\laragon\www\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\helpers\CHtml.php(163): renderAttributes()
+#1 C:\laragon\www\yii\framework\web\helpers\CHtml.php(427): tag()
+#2 C:\laragon\www\stikom\protected\views\siswa\admin.php(39): link()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiswaController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\CController.php(872): SiswaController->renderFile()
+#6 C:\laragon\www\yii\framework\web\CController.php(785): SiswaController->renderPartial()
+#7 C:\laragon\www\stikom\protected\controllers\SiswaController.php(174): SiswaController->render()
+#8 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiswaController->actionAdmin()
+#9 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): SiswaController->runAction()
+#11 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#13 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): SiswaController->filterAccessControl()
+#14 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#15 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\laragon\www\yii\framework\web\CController.php(265): SiswaController->runActionWithFilters()
+#17 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiswaController->run()
+#18 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=siswa/admin
+in C:\laragon\www\stikom\protected\views\siswa\admin.php (39)
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (174)
+in C:\laragon\www\stikom\index.php (13)
+2019/11/09 13:28:07 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\laragon\www\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\helpers\CHtml.php(163): renderAttributes()
+#1 C:\laragon\www\yii\framework\web\helpers\CHtml.php(427): tag()
+#2 C:\laragon\www\stikom\protected\views\siswa\admin.php(40): link()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiswaController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\CController.php(872): SiswaController->renderFile()
+#6 C:\laragon\www\yii\framework\web\CController.php(785): SiswaController->renderPartial()
+#7 C:\laragon\www\stikom\protected\controllers\SiswaController.php(174): SiswaController->render()
+#8 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiswaController->actionAdmin()
+#9 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): SiswaController->runAction()
+#11 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#13 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): SiswaController->filterAccessControl()
+#14 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#15 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\laragon\www\yii\framework\web\CController.php(265): SiswaController->runActionWithFilters()
+#17 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiswaController->run()
+#18 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=siswa/admin
+in C:\laragon\www\stikom\protected\views\siswa\admin.php (40)
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (174)
+in C:\laragon\www\stikom\index.php (13)
+2019/11/09 13:32:31 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\laragon\www\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\helpers\CHtml.php(163): renderAttributes()
+#1 C:\laragon\www\yii\framework\web\helpers\CHtml.php(427): tag()
+#2 C:\laragon\www\stikom\protected\views\siswa\admin.php(41): link()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiswaController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\CController.php(872): SiswaController->renderFile()
+#6 C:\laragon\www\yii\framework\web\CController.php(785): SiswaController->renderPartial()
+#7 C:\laragon\www\stikom\protected\controllers\SiswaController.php(174): SiswaController->render()
+#8 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiswaController->actionAdmin()
+#9 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): SiswaController->runAction()
+#11 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#13 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): SiswaController->filterAccessControl()
+#14 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#15 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\laragon\www\yii\framework\web\CController.php(265): SiswaController->runActionWithFilters()
+#17 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiswaController->run()
+#18 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=siswa/admin
+in C:\laragon\www\stikom\protected\views\siswa\admin.php (41)
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (174)
+in C:\laragon\www\stikom\index.php (13)
+2019/11/09 14:58:34 [error] [php] Undefined variable: model (C:\laragon\www\stikom\protected\views\siswa\_view.php:11)
+Stack trace:
+#0 C:\laragon\www\yii\framework\zii\widgets\CListView.php(291): SiswaController->renderFile()
+#1 C:\laragon\www\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\laragon\www\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#4 C:\laragon\www\yii\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(182): CListView->run()
+#6 C:\laragon\www\stikom\protected\views\siswa\index.php(46): SiswaController->widget()
+#7 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#8 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiswaController->renderInternal()
+#9 C:\laragon\www\yii\framework\web\CController.php(872): SiswaController->renderFile()
+#10 C:\laragon\www\yii\framework\web\CController.php(785): SiswaController->renderPartial()
+#11 C:\laragon\www\stikom\protected\controllers\SiswaController.php(159): SiswaController->render()
+#12 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiswaController->actionIndex()
+#13 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): SiswaController->runAction()
+#15 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#17 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): SiswaController->filterAccessControl()
+#18 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\laragon\www\yii\framework\web\CController.php(265): SiswaController->runActionWithFilters()
+#21 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiswaController->run()
+#22 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=siswa/index
+in C:\laragon\www\stikom\protected\views\siswa\_view.php (11)
+in C:\laragon\www\stikom\protected\views\siswa\index.php (46)
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (159)
+2019/11/09 16:06:40 [error] [exception.CException] exception 'CException' with message 'Property "CBreadcrumbs.class" is not defined.' in C:\laragon\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('class', 'breadcrumbs')
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiswaController), 'zii.widgets.CBr...', Array)
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.CBr...', Array)
+#3 C:\laragon\www\stikom\protected\views\layouts\main.php(110): CBaseController->widget('zii.widgets.CBr...', Array)
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#7 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\laragon\www\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\laragon\www\stikom\protected\views\layouts\column1.php(16): CBaseController->endContent()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#13 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#14 C:\laragon\www\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#15 C:\laragon\www\stikom\protected\controllers\SiswaController.php(174): CController->render('admin', Array)
+#16 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiswaController->actionAdmin()
+#17 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#26 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#27 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php?r=menu/admin
+---
+2019/11/09 16:16:14 [error] [exception.CException] exception 'CException' with message 'Alias "ii.widgets.CMenu" is invalid. Make sure it points to an existing directory or file.' in C:\laragon\www\yii\framework\YiiBase.php:355
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('ii.widgets.CMen...', true)
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ii.widgets.CMen...', Array)
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('ii.widgets.CMen...', Array)
+#3 C:\laragon\www\stikom\protected\views\layouts\main.php(100): CBaseController->widget('ii.widgets.CMen...', Array)
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#7 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\laragon\www\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\laragon\www\stikom\protected\views\layouts\column1.php(16): CBaseController->endContent()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#13 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#14 C:\laragon\www\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#15 C:\laragon\www\stikom\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\laragon\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php
+HTTP_REFERER=http://localhost/index.php?r=siswa/admin
+---
+2019/11/09 16:26:24 [error] [php] Undefined index: label (C:\laragon\www\yii\framework\zii\widgets\CMenu.php:253)
+Stack trace:
+#0 C:\laragon\www\yii\framework\zii\widgets\CMenu.php(182): CMenu->renderMenuRecursive()
+#1 C:\laragon\www\yii\framework\zii\widgets\CMenu.php(169): CMenu->renderMenu()
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(182): CMenu->run()
+#3 C:\laragon\www\stikom\protected\views\layouts\main.php(105): SiteController->widget()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#7 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#10 C:\laragon\www\yii\framework\web\CBaseController.php(309): SiteController->endWidget()
+#11 C:\laragon\www\stikom\protected\views\layouts\column1.php(16): SiteController->endContent()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#13 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 C:\laragon\www\yii\framework\web\CController.php(787): SiteController->renderFile()
+#15 C:\laragon\www\stikom\protected\controllers\SiteController.php(32): SiteController->render()
+#16 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\laragon\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#19 C:\laragon\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#20 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#21 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in C:\laragon\www\stikom\protected\views\layouts\main.php (105)
+in C:\laragon\www\stikom\protected\views\layouts\column1.php (16)
+in C:\laragon\www\stikom\protected\controllers\SiteController.php (32)
+2019/11/09 16:47:51 [error] [exception.CException] exception 'CException' with message 'Property "dbMenu.item" is not defined.' in C:\laragon\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\laragon\www\stikom\protected\components\DbMenu.php(20): CComponent->__set('item', Array)
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(147): dbMenu->init()
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('application.com...', Array)
+#3 C:\laragon\www\stikom\protected\views\layouts\main.php(114): CBaseController->widget('application.com...', Array)
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#7 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\laragon\www\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\laragon\www\stikom\protected\views\layouts\column1.php(16): CBaseController->endContent()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#13 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#14 C:\laragon\www\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#15 C:\laragon\www\stikom\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\laragon\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php
+HTTP_REFERER=http://localhost/index.php?r=site/login
+---
+2019/11/09 16:57:36 [error] [exception.CException] exception 'CException' with message 'Property "dbMenu.item" is not defined.' in C:\laragon\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\laragon\www\stikom\protected\components\DbMenu.php(20): CComponent->__set('item', Array)
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(147): dbMenu->init()
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('application.com...', Array)
+#3 C:\laragon\www\stikom\protected\views\layouts\main.php(121): CBaseController->widget('application.com...', Array)
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#7 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\laragon\www\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\laragon\www\stikom\protected\views\layouts\column1.php(16): CBaseController->endContent()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#13 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#14 C:\laragon\www\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#15 C:\laragon\www\stikom\protected\controllers\SiswaController.php(174): CController->render('admin', Array)
+#16 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiswaController->actionAdmin()
+#17 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#26 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#27 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 17:03:29 [error] [exception.CException] exception 'CException' with message 'Property "dbMenu.url" is not defined.' in C:\laragon\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('url', '#')
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ProdiController), 'application.com...', Array)
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('application.com...', Array)
+#3 C:\laragon\www\stikom\protected\views\layouts\main.php(126): CBaseController->widget('application.com...', Array)
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#7 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#8 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\laragon\www\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\laragon\www\stikom\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(126): require('C:\\laragon\\www\\...')
+#13 C:\laragon\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\laragon\\www\\...', Array, true)
+#14 C:\laragon\www\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\laragon\\www\\...', Array, true)
+#15 C:\laragon\www\stikom\protected\controllers\ProdiController.php(146): CController->render('admin', Array)
+#16 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): ProdiController->actionAdmin()
+#17 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#26 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodi/admin')
+#27 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php?r=prodi/admin
+HTTP_REFERER=http://localhost/index.php?r=jurusan/admin
+---
+2019/11/09 20:08:36 [warning] [application] Failed to set unsafe attribute "images" of "Siswa".
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (120)
+in C:\laragon\www\stikom\index.php (13)
+2019/11/09 20:08:59 [warning] [application] Failed to set unsafe attribute "images" of "Siswa".
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (120)
+in C:\laragon\www\stikom\index.php (13)
+2019/11/09 20:10:46 [warning] [application] Failed to set unsafe attribute "images" of "Siswa".
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (76)
+in C:\laragon\www\stikom\index.php (13)
+2019/11/09 20:11:37 [warning] [application] Failed to set unsafe attribute "images" of "Siswa".
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (120)
+in C:\laragon\www\stikom\index.php (13)
+2019/11/09 20:11:51 [warning] [application] Failed to set unsafe attribute "images" of "Siswa".
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (120)
+in C:\laragon\www\stikom\index.php (13)
+2019/11/09 20:16:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodi/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prodi/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 20:16:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 20:24:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 20:25:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 20:25:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 20:25:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 20:25:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 20:25:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 20:25:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 20:25:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 20:25:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 20:25:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 20:25:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/create')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/create
+HTTP_REFERER=http://localhost/index.php?r=siswa
+---
+2019/11/09 20:26:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php?r=siswa
+---
+2019/11/09 20:26:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php?r=siswa
+---
+2019/11/09 20:26:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa
+---
+2019/11/09 20:26:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php
+---
+2019/11/09 20:29:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kelas')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=kelas
+HTTP_REFERER=http://localhost/index.php?r=siswa
+---
+2019/11/09 20:30:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/create')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/create
+HTTP_REFERER=http://localhost/index.php?r=siswa
+---
+2019/11/09 20:48:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodi')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prodi
+HTTP_REFERER=http://localhost/index.php?r=siswa
+---
+2019/11/09 20:48:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodi')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prodi
+HTTP_REFERER=http://localhost/index.php?r=siswa
+---
+2019/11/09 20:48:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodi/create')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prodi/create
+HTTP_REFERER=http://localhost/index.php?r=prodi
+---
+2019/11/09 21:05:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/create')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/create
+HTTP_REFERER=http://localhost/index.php?r=siswa
+---
+2019/11/09 21:09:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/create')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/create
+HTTP_REFERER=http://localhost/index.php?r=siswa
+---
+2019/11/09 21:20:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/create')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/create
+HTTP_REFERER=http://localhost/index.php?r=siswa
+---
+2019/11/09 21:22:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('siswa/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=siswa/admin
+HTTP_REFERER=http://localhost/index.php?r=siswa
+---
+2019/11/09 21:25:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodi/create')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prodi/create
+HTTP_REFERER=http://localhost/index.php?r=prodi
+---
+2019/11/09 21:26:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodi/create')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prodi/create
+HTTP_REFERER=http://localhost/index.php?r=prodi
+---
+2019/11/09 21:27:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodi/create')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prodi/create
+HTTP_REFERER=http://localhost/index.php?r=prodi
+---
+2019/11/09 21:27:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodi/create')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prodi/create
+HTTP_REFERER=http://localhost/index.php?r=prodi
+---
+2019/11/09 21:27:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodi/create')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prodi/create
+HTTP_REFERER=http://localhost/index.php?r=prodi
+---
+2019/11/09 21:27:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodi/create')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prodi/create
+HTTP_REFERER=http://localhost/index.php?r=prodi
+---
+2019/11/09 21:27:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodi/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prodi/admin
+HTTP_REFERER=http://localhost/index.php?r=prodi
+---
+2019/11/09 21:28:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jurusan/create')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=jurusan/create
+HTTP_REFERER=http://localhost/index.php?r=jurusan
+---
+2019/11/09 22:02:31 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\laragon\www\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\helpers\CHtml.php(163): renderAttributes()
+#1 C:\laragon\www\yii\framework\web\helpers\CHtml.php(2486): tag()
+#2 C:\laragon\www\yii\framework\web\helpers\CHtml.php(1540): activeInputField()
+#3 C:\laragon\www\yii\framework\web\widgets\CActiveForm.php(792): activeTextField()
+#4 C:\laragon\www\stikom\protected\views\menu\_form.php(70): CActiveForm->textField()
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#6 C:\laragon\www\yii\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#7 C:\laragon\www\yii\framework\web\CController.php(872): MenuController->renderFile()
+#8 C:\laragon\www\stikom\protected\views\menu\update.php(47): MenuController->renderPartial()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#10 C:\laragon\www\yii\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#11 C:\laragon\www\yii\framework\web\CController.php(872): MenuController->renderFile()
+#12 C:\laragon\www\yii\framework\web\CController.php(785): MenuController->renderPartial()
+#13 C:\laragon\www\stikom\protected\controllers\MenuController.php(108): MenuController->render()
+#14 unknown(0): MenuController->actionUpdate()
+#15 C:\laragon\www\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#16 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#17 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): MenuController->runAction()
+#19 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#21 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#22 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#23 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\laragon\www\yii\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#25 C:\laragon\www\yii\framework\web\CWebApplication.php(282): MenuController->run()
+#26 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=menu/update&id=1
+in C:\laragon\www\stikom\protected\views\menu\_form.php (70)
+in C:\laragon\www\stikom\protected\views\menu\update.php (47)
+in C:\laragon\www\stikom\protected\controllers\MenuController.php (108)
+2019/11/09 22:02:52 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\laragon\www\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\helpers\CHtml.php(163): renderAttributes()
+#1 C:\laragon\www\yii\framework\web\helpers\CHtml.php(2486): tag()
+#2 C:\laragon\www\yii\framework\web\helpers\CHtml.php(1540): activeInputField()
+#3 C:\laragon\www\yii\framework\web\widgets\CActiveForm.php(792): activeTextField()
+#4 C:\laragon\www\stikom\protected\views\menu\_form.php(70): CActiveForm->textField()
+#5 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#6 C:\laragon\www\yii\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#7 C:\laragon\www\yii\framework\web\CController.php(872): MenuController->renderFile()
+#8 C:\laragon\www\stikom\protected\views\menu\update.php(47): MenuController->renderPartial()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#10 C:\laragon\www\yii\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#11 C:\laragon\www\yii\framework\web\CController.php(872): MenuController->renderFile()
+#12 C:\laragon\www\yii\framework\web\CController.php(785): MenuController->renderPartial()
+#13 C:\laragon\www\stikom\protected\controllers\MenuController.php(108): MenuController->render()
+#14 unknown(0): MenuController->actionUpdate()
+#15 C:\laragon\www\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#16 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#17 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(134): MenuController->runAction()
+#19 C:\laragon\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\laragon\www\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#21 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#22 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#23 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\laragon\www\yii\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#25 C:\laragon\www\yii\framework\web\CWebApplication.php(282): MenuController->run()
+#26 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=menu/update&id=1
+in C:\laragon\www\stikom\protected\views\menu\_form.php (70)
+in C:\laragon\www\stikom\protected\views\menu\update.php (47)
+in C:\laragon\www\stikom\protected\controllers\MenuController.php (108)
+2019/11/09 22:45:26 [error] [php] reset() expects parameter 1 to be array, integer given (C:\laragon\www\yii\framework\gii\components\Pear\Text\Diff\Engine\native.php:196)
+Stack trace:
+#0 C:\laragon\www\yii\framework\gii\components\Pear\Text\Diff\Engine\native.php(88): Text_Diff_Engine_native->_compareseq()
+#1 unknown(0): Text_Diff_Engine_native->diff()
+#2 C:\laragon\www\yii\framework\gii\components\Pear\Text\Diff.php(56): call_user_func_array()
+#3 C:\laragon\www\yii\framework\gii\components\TextDiff.php(18): Text_Diff->__construct()
+#4 C:\laragon\www\yii\framework\gii\CCodeGenerator.php(109): compare()
+#5 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): ModelGenerator->actionDiff()
+#6 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\laragon\www\yii\framework\web\CController.php(286): ModelGenerator->runAction()
+#8 C:\laragon\www\yii\framework\web\CController.php(265): ModelGenerator->runActionWithFilters()
+#9 C:\laragon\www\yii\framework\web\CWebApplication.php(282): ModelGenerator->run()
+#10 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=gii/model/diff&id=0
+in C:\laragon\www\stikom\index.php (13)
+2019/11/09 22:45:39 [error] [php] reset() expects parameter 1 to be array, integer given (C:\laragon\www\yii\framework\gii\components\Pear\Text\Diff\Engine\native.php:196)
+Stack trace:
+#0 C:\laragon\www\yii\framework\gii\components\Pear\Text\Diff\Engine\native.php(88): Text_Diff_Engine_native->_compareseq()
+#1 unknown(0): Text_Diff_Engine_native->diff()
+#2 C:\laragon\www\yii\framework\gii\components\Pear\Text\Diff.php(56): call_user_func_array()
+#3 C:\laragon\www\yii\framework\gii\components\TextDiff.php(18): Text_Diff->__construct()
+#4 C:\laragon\www\yii\framework\gii\CCodeGenerator.php(109): compare()
+#5 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): ModelGenerator->actionDiff()
+#6 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\laragon\www\yii\framework\web\CController.php(286): ModelGenerator->runAction()
+#8 C:\laragon\www\yii\framework\web\CController.php(265): ModelGenerator->runActionWithFilters()
+#9 C:\laragon\www\yii\framework\web\CWebApplication.php(282): ModelGenerator->run()
+#10 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=gii/model/diff&id=0
+in C:\laragon\www\stikom\index.php (13)
+2019/11/09 22:53:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=menu/admin
+HTTP_REFERER=http://localhost/index.php?r=user/admin
+---
+2019/11/09 23:14:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kelas/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=kelas/admin
+HTTP_REFERER=http://localhost/index.php?r=kelas
+---
+2019/11/09 23:14:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kelas/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=kelas/admin
+HTTP_REFERER=http://localhost/index.php?r=kelas
+---
+2019/11/09 23:15:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kelas/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=kelas/admin
+HTTP_REFERER=http://localhost/index.php?r=kelas
+---
+2019/11/09 23:20:56 [error] [php] Undefined index: label (C:\laragon\www\yii\framework\zii\widgets\CMenu.php:253)
+Stack trace:
+#0 C:\laragon\www\yii\framework\zii\widgets\CMenu.php(169): dbMenu->renderMenu()
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(182): dbMenu->run()
+#2 C:\laragon\www\stikom\protected\views\layouts\main.php(132): SiteController->widget()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#7 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(309): SiteController->endWidget()
+#10 C:\laragon\www\stikom\protected\views\layouts\column1.php(16): SiteController->endContent()
+#11 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#13 C:\laragon\www\yii\framework\web\CController.php(787): SiteController->renderFile()
+#14 C:\laragon\www\stikom\protected\controllers\SiteController.php(32): SiteController->render()
+#15 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\laragon\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#18 C:\laragon\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#19 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#20 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\laragon\www\stikom\protected\views\layouts\main.php (132)
+in C:\laragon\www\stikom\protected\views\layouts\column1.php (16)
+in C:\laragon\www\stikom\protected\controllers\SiteController.php (32)
+2019/11/09 23:22:43 [error] [php] Undefined index: label (C:\laragon\www\yii\framework\zii\widgets\CMenu.php:253)
+Stack trace:
+#0 C:\laragon\www\yii\framework\zii\widgets\CMenu.php(169): dbMenu->renderMenu()
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(182): dbMenu->run()
+#2 C:\laragon\www\stikom\protected\views\layouts\main.php(132): SiteController->widget()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#7 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(309): SiteController->endWidget()
+#10 C:\laragon\www\stikom\protected\views\layouts\column1.php(16): SiteController->endContent()
+#11 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#13 C:\laragon\www\yii\framework\web\CController.php(787): SiteController->renderFile()
+#14 C:\laragon\www\stikom\protected\controllers\SiteController.php(32): SiteController->render()
+#15 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\laragon\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#18 C:\laragon\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#19 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#20 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\laragon\www\stikom\protected\views\layouts\main.php (132)
+in C:\laragon\www\stikom\protected\views\layouts\column1.php (16)
+in C:\laragon\www\stikom\protected\controllers\SiteController.php (32)
+2019/11/09 23:23:34 [error] [php] Undefined index: label (C:\laragon\www\yii\framework\zii\widgets\CMenu.php:253)
+Stack trace:
+#0 C:\laragon\www\yii\framework\zii\widgets\CMenu.php(169): dbMenu->renderMenu()
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(182): dbMenu->run()
+#2 C:\laragon\www\stikom\protected\views\layouts\main.php(132): SiteController->widget()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#7 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(309): SiteController->endWidget()
+#10 C:\laragon\www\stikom\protected\views\layouts\column1.php(16): SiteController->endContent()
+#11 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#13 C:\laragon\www\yii\framework\web\CController.php(787): SiteController->renderFile()
+#14 C:\laragon\www\stikom\protected\controllers\SiteController.php(32): SiteController->render()
+#15 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\laragon\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#18 C:\laragon\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#19 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#20 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\laragon\www\stikom\protected\views\layouts\main.php (132)
+in C:\laragon\www\stikom\protected\views\layouts\column1.php (16)
+in C:\laragon\www\stikom\protected\controllers\SiteController.php (32)
+2019/11/09 23:23:36 [error] [php] Undefined index: label (C:\laragon\www\yii\framework\zii\widgets\CMenu.php:253)
+Stack trace:
+#0 C:\laragon\www\yii\framework\zii\widgets\CMenu.php(169): dbMenu->renderMenu()
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(182): dbMenu->run()
+#2 C:\laragon\www\stikom\protected\views\layouts\main.php(132): SiteController->widget()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#7 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(309): SiteController->endWidget()
+#10 C:\laragon\www\stikom\protected\views\layouts\column1.php(16): SiteController->endContent()
+#11 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#13 C:\laragon\www\yii\framework\web\CController.php(787): SiteController->renderFile()
+#14 C:\laragon\www\stikom\protected\controllers\SiteController.php(32): SiteController->render()
+#15 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\laragon\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#18 C:\laragon\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#19 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#20 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\laragon\www\stikom\protected\views\layouts\main.php (132)
+in C:\laragon\www\stikom\protected\views\layouts\column1.php (16)
+in C:\laragon\www\stikom\protected\controllers\SiteController.php (32)
+2019/11/09 23:23:36 [error] [php] Undefined index: label (C:\laragon\www\yii\framework\zii\widgets\CMenu.php:253)
+Stack trace:
+#0 C:\laragon\www\yii\framework\zii\widgets\CMenu.php(169): dbMenu->renderMenu()
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(182): dbMenu->run()
+#2 C:\laragon\www\stikom\protected\views\layouts\main.php(132): SiteController->widget()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#7 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(309): SiteController->endWidget()
+#10 C:\laragon\www\stikom\protected\views\layouts\column1.php(16): SiteController->endContent()
+#11 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#13 C:\laragon\www\yii\framework\web\CController.php(787): SiteController->renderFile()
+#14 C:\laragon\www\stikom\protected\controllers\SiteController.php(32): SiteController->render()
+#15 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\laragon\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#18 C:\laragon\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#19 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#20 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\laragon\www\stikom\protected\views\layouts\main.php (132)
+in C:\laragon\www\stikom\protected\views\layouts\column1.php (16)
+in C:\laragon\www\stikom\protected\controllers\SiteController.php (32)
+2019/11/09 23:23:36 [error] [php] Undefined index: label (C:\laragon\www\yii\framework\zii\widgets\CMenu.php:253)
+Stack trace:
+#0 C:\laragon\www\yii\framework\zii\widgets\CMenu.php(169): dbMenu->renderMenu()
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(182): dbMenu->run()
+#2 C:\laragon\www\stikom\protected\views\layouts\main.php(132): SiteController->widget()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#7 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(309): SiteController->endWidget()
+#10 C:\laragon\www\stikom\protected\views\layouts\column1.php(16): SiteController->endContent()
+#11 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#13 C:\laragon\www\yii\framework\web\CController.php(787): SiteController->renderFile()
+#14 C:\laragon\www\stikom\protected\controllers\SiteController.php(32): SiteController->render()
+#15 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\laragon\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#18 C:\laragon\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#19 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#20 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\laragon\www\stikom\protected\views\layouts\main.php (132)
+in C:\laragon\www\stikom\protected\views\layouts\column1.php (16)
+in C:\laragon\www\stikom\protected\controllers\SiteController.php (32)
+2019/11/09 23:23:36 [error] [php] Undefined index: label (C:\laragon\www\yii\framework\zii\widgets\CMenu.php:253)
+Stack trace:
+#0 C:\laragon\www\yii\framework\zii\widgets\CMenu.php(169): dbMenu->renderMenu()
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(182): dbMenu->run()
+#2 C:\laragon\www\stikom\protected\views\layouts\main.php(132): SiteController->widget()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#7 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(309): SiteController->endWidget()
+#10 C:\laragon\www\stikom\protected\views\layouts\column1.php(16): SiteController->endContent()
+#11 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#13 C:\laragon\www\yii\framework\web\CController.php(787): SiteController->renderFile()
+#14 C:\laragon\www\stikom\protected\controllers\SiteController.php(32): SiteController->render()
+#15 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\laragon\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#18 C:\laragon\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#19 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#20 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\laragon\www\stikom\protected\views\layouts\main.php (132)
+in C:\laragon\www\stikom\protected\views\layouts\column1.php (16)
+in C:\laragon\www\stikom\protected\controllers\SiteController.php (32)
+2019/11/09 23:23:37 [error] [php] Undefined index: label (C:\laragon\www\yii\framework\zii\widgets\CMenu.php:253)
+Stack trace:
+#0 C:\laragon\www\yii\framework\zii\widgets\CMenu.php(169): dbMenu->renderMenu()
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(182): dbMenu->run()
+#2 C:\laragon\www\stikom\protected\views\layouts\main.php(132): SiteController->widget()
+#3 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#6 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#7 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(309): SiteController->endWidget()
+#10 C:\laragon\www\stikom\protected\views\layouts\column1.php(16): SiteController->endContent()
+#11 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#12 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#13 C:\laragon\www\yii\framework\web\CController.php(787): SiteController->renderFile()
+#14 C:\laragon\www\stikom\protected\controllers\SiteController.php(32): SiteController->render()
+#15 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\laragon\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#18 C:\laragon\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#19 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#20 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\laragon\www\stikom\protected\views\layouts\main.php (132)
+in C:\laragon\www\stikom\protected\views\layouts\column1.php (16)
+in C:\laragon\www\stikom\protected\controllers\SiteController.php (32)
+2019/11/09 23:29:52 [error] [php] Cannot use a scalar value as an array (C:\laragon\www\stikom\protected\components\DbMenu.php:20)
+Stack trace:
+#0 C:\laragon\www\stikom\protected\views\layouts\main.php(132): SiteController->widget()
+#1 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#2 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#3 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#4 C:\laragon\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#5 C:\laragon\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#6 C:\laragon\www\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#7 C:\laragon\www\yii\framework\web\CBaseController.php(309): SiteController->endWidget()
+#8 C:\laragon\www\stikom\protected\views\layouts\column1.php(16): SiteController->endContent()
+#9 C:\laragon\www\yii\framework\web\CBaseController.php(126): require()
+#10 C:\laragon\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#11 C:\laragon\www\yii\framework\web\CController.php(787): SiteController->renderFile()
+#12 C:\laragon\www\stikom\protected\controllers\SiteController.php(32): SiteController->render()
+#13 C:\laragon\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#14 C:\laragon\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\laragon\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#16 C:\laragon\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#17 C:\laragon\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#18 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\laragon\www\stikom\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\laragon\www\stikom\protected\components\DbMenu.php (20)
+in C:\laragon\www\stikom\protected\views\layouts\main.php (132)
+in C:\laragon\www\stikom\protected\views\layouts\column1.php (16)
+2019/11/09 23:32:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gender/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=gender/admin
+HTTP_REFERER=http://localhost/index.php?r=gender
+---
+2019/11/09 23:33:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('prodi/create')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prodi/create
+HTTP_REFERER=http://localhost/index.php?r=prodi
+---

@@ -1,16 +1,15 @@
 /*
-
  Source Server         : VM
  Source Server Type    : MySQL
- Source Server Version : 50727
- Source Host           : 10.10.10.100:3306
+ Source Server Version : 50724
+ Source Host           : localhost:3306
  Source Schema         : stikom
 
  Target Server Type    : MySQL
- Target Server Version : 50727
+ Target Server Version : 50724
  File Encoding         : 65001
 
- Date: 03/11/2019 07:33:41
+ Date: 09/11/2019 23:41:29
 */
 
 SET NAMES utf8mb4;
@@ -73,22 +72,23 @@ CREATE TABLE `menu`  (
   `label` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `status` int(11) NULL DEFAULT NULL,
   `position` int(11) NULL DEFAULT NULL,
+  `icon` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `url` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `description` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `created_date` datetime(0) NULL DEFAULT NULL,
   `updated_date` datetime(0) NULL DEFAULT NULL,
   PRIMARY KEY (`menu_id`) USING BTREE,
   UNIQUE INDEX `name_UNIQUE`(`label`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of menu
 -- ----------------------------
-INSERT INTO `menu` VALUES (1, 'Siswa', 1, 1, 'siswa/admin', 'Siswa', '2019-11-03 04:01:01', NULL);
-INSERT INTO `menu` VALUES (2, 'Gender', 0, 2, 'gender/admin', 'Gender', '2019-11-03 04:01:28', '2019-11-03 04:12:56');
-INSERT INTO `menu` VALUES (3, 'Lokasi Kelas', 1, 3, 'kelas/admin', 'Kelas', '2019-11-03 04:11:55', NULL);
-INSERT INTO `menu` VALUES (4, 'Jurusan', 1, 4, 'jurusan/admin', 'Jurusan', '2019-11-03 04:12:17', NULL);
-INSERT INTO `menu` VALUES (5, 'Program Studi', 1, 5, 'prodi/admin', 'Prodi', '2019-11-03 04:12:44', NULL);
+INSERT INTO `menu` VALUES (1, 'Siswa', 1, 1, 'fas fa-user-graduate', 'siswa', 'Siswa', '2019-11-09 23:03:04', '2019-11-09 23:09:43');
+INSERT INTO `menu` VALUES (2, 'Kelas', 1, 2, 'fas fa-chalkboard-teacher', 'kelas', 'Kelas', '2019-11-09 23:04:31', '2019-11-09 23:10:56');
+INSERT INTO `menu` VALUES (3, 'Jurusan', 1, 3, 'fas fa-book-open', 'jurusan', 'Jurusan', '2019-11-09 23:05:15', '2019-11-09 23:10:28');
+INSERT INTO `menu` VALUES (4, 'Program Studi', 1, 4, 'fas fa-book-reader', 'prodi', 'Program Studi', '2019-11-09 23:05:59', '2019-11-09 23:10:41');
+INSERT INTO `menu` VALUES (5, 'Gender', 0, 5, 'fas fa-venus-mars', 'gender', 'Gender', '2019-11-09 23:08:07', '2019-11-09 23:34:39');
 
 -- ----------------------------
 -- Table structure for prodi
@@ -123,7 +123,7 @@ CREATE TABLE `siswa`  (
 -- ----------------------------
 -- Records of siswa
 -- ----------------------------
-INSERT INTO `siswa` VALUES ('7003', 'Antonius Arie', '3446-1572735270.png', '1', 'L1', 'TK01', 'SI');
+INSERT INTO `siswa` VALUES ('7003', 'Arie', '189-1573305046.jpg', '1', 'L1', 'TK01', 'SI');
 
 -- ----------------------------
 -- Table structure for user
@@ -141,11 +141,12 @@ CREATE TABLE `user`  (
   `created_date` datetime(0) NULL DEFAULT NULL,
   `updated_date` datetime(0) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 16 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES (1, 'stikom', '2f1cb0aeaa933707511af95607f23819043a912e', 'Administrator', 'stikom@stikombinaniaga.ac.id', 'admin', 'admin', 'stikom', '2019-10-27 14:42:41', '2019-11-03 03:59:32');
+INSERT INTO `user` VALUES (15, 'arie', '10470c3b4b1fed12c3baac014be15fac67c6e815', 'Arie', 'me@arie.id', 'user', 'stikom', NULL, '2019-11-03 08:36:48', NULL);
 
 SET FOREIGN_KEY_CHECKS = 1;

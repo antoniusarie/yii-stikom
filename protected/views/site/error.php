@@ -11,5 +11,7 @@ $this->breadcrumbs=array(
 <h2>Error <?php echo $code; ?></h2>
 
 <div class="error">
-<?php echo CHtml::encode($message); ?>
+<div class="well well-lg">
+	<?php echo '<span style="color:red; font-weight:bold">'.CHtml::encode($message). '</span>'; ?>
+</div>
 </div>

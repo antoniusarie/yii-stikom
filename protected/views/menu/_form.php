@@ -40,20 +40,35 @@
 		<?php echo $form->textField($model,'position'); ?>
 		<?php echo $form->error($model,'position'); ?>
 	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'icon'); ?>
+		<?php echo $form->textField($model,'icon', array(
+			'class'=>'iconpicker',
+			'data-input-search'=>true,
+			'data-placement'=>'bottomLeft',
+			'placeholder'=>'Fontawesome Icon',
+			'style'=>'cursor: pointer'
+		)); ?>
+		<span class="input-group-addon" id="sizing-addon2" style="cursor: pointer;">
+			<i class="fas fa-font" id="font"></i>
+		</span>
+		<?php echo $form->error($model,'icon'); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'url'); ?>
-		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>128)); ?>
+		<?php echo $form->textField($model,'url',array('id'=>'url','size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'url'); ?>
 		<br>
 		<p><i><b>Catatan :</b></i></p>
 		<h6>
-		<i>Nama URL :</i> <span style="color:maroon">path-ke-folder-view</span><br>
-		<i>Contoh :</i><br>
-		<ol>
-			<li><b><span style="color:maroon">menu</span></b> <i>(menu -> page index)</i></li>	
-			<li><b><span style="color:maroon">menu/admin</span></b> <i>(menu -> page admin)</i></span>	
-		</ol>
+			<i>Nama URL :</i> <span style="color:maroon">path-ke-folder-view</span><br>
+			<i>Contoh :</i><br>
+			<ol>
+				<li><b><span style="color:maroon">menu</span></b> <i>(menu -> page index)</i></li>	
+				<li><b><span style="color:maroon">menu/admin</span></b> <i>(menu -> page admin)</i></span>	
+			</ol>
 		</h6>
 	</div>
 
