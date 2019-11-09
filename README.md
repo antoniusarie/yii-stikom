@@ -3,7 +3,7 @@ Web Base Programming berbasis php framework Yii
 
 (STIKOM Binaniaga Bogor)
 
-# Informasi (branch - bootstrap)
+# Informasi (master)
 1. Kostumisasi menggunakan bootstrap
 2. Nama db: 
     > stikom
