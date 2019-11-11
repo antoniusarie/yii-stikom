@@ -62,9 +62,7 @@
 
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
-
 	<div class="navbar-header">
-	<!-- <div id="mainmenu">	 -->
       
 	<?php
 		$user = Yii::app()->user;
@@ -98,30 +96,30 @@
 		);
 		
 		$this->widget('zii.widgets.CMenu', array(
-			'items'=>array(
-				array(
-					'label'=>'<i class="fas fa-sign-in-alt"></i> Log In', 
-					'url'=>array('/site/login'), 
-					'visible'=>$user->isGuest,
-				),
-				array(
-					'label'=>'<i class="fas fa-user-circle"></i> ' .Yii::app()->user->name, 
-					'url'=>'#',
-					'visible'=>!$user->isGuest,
-					'linkOptions'=> array(
-                    	'class' => 'dropdown-toggle',
-						'data-toggle' => 'dropdown',
-                    ),
-            		'itemOptions' => array('class'=>'dropdown'),
-            		'items' => $this->menu,
-            	),
-			),			
-			'encodeLabel' => false,
-    		'htmlOptions' => array(
-    			'class'=>'nav pull-right',
+		'items'=>array(
+			array(
+				'label'=>'<i class="fas fa-sign-in-alt"></i> Log In', 
+				'url'=>array('/site/login'), 
+				'visible'=>$user->isGuest,
+			),
+			array(
+				'label'=>'<i class="fas fa-user-circle"></i> ' .Yii::app()->user->name, 
+				'url'=>'#',
+				'visible'=>!$user->isGuest,
+				'linkOptions'=> array(
+                   	'class' => 'dropdown-toggle',
+					'data-toggle' => 'dropdown',
+                   ),
+           		'itemOptions' => array('class'=>'dropdown'),
+           		'items' => $this->menu,
+           	),
+		),			
+		'encodeLabel' => false,
+    	'htmlOptions' => array(
+    		'class'=>'nav pull-right',
     		),
-    		'submenuHtmlOptions' => array(
-    			'class' => 'dropdown-menu',
+    	'submenuHtmlOptions' => array(
+    		'class' => 'dropdown-menu',
 			),
 		));
 
@@ -130,8 +128,8 @@
 				'class'=>'nav dbmenu',
             )
 		));
-		?>
-	<!-- </div> -->
+	?>
+
 	</div>	
 	</div>
 </nav><!-- mainmenu -->

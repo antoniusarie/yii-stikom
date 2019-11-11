@@ -6,7 +6,7 @@
 
 Yii::import('zii.widgets.CMenu', true);
 
-class dbMenu extends CMenu
+class DbMenu extends CMenu
 {
     public function init()
     {
