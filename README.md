@@ -3,36 +3,29 @@ Web Base Programming berbasis php framework Yii
 
 (STIKOM Binaniaga Bogor)
 
-# Informasi (master)
+# Informasi
 1. Kostumisasi menggunakan bootstrap
 2. Nama db: 
-    > stikom
+    * stikom
 
 3. Dump db update ada di:
-    > /database/stikom.sql
+    * /database/stikom.sql
 
 4. Database ada 7 tabel :
-    > user
-
-    > menu
-
-    > siswa
-
-    > gender
-
-    > kelas
-
-    > jurusan
-
-    > prodi
+    * user
+    * menu
+    * siswa
+    * gender
+    * kelas
+    * jurusan
+    * prodi
 
 5. Implementasi Access Control Login yg sederhana, login based dari tabel user
 6. Menu dinamis based dari tabel menu
 7. Relasi tabel siswa ke tabel gender, kelas, jurusan, prodi 
 8. User role ada 2 saja:
-    > admin
-
-    > user
+    * admin
+    * user
 
 # Tambahan
 1. Di menu 'Siswa' bisa upload/kelola foto/gambar
