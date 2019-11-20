@@ -24,7 +24,7 @@ Web Base Programming berbasis php framework Yii
     * user
 
 ## Tambahan
-1. Di menu 'Siswa' bisa upload/kelola foto/gambar
+1. Di menu `Siswa` bisa upload/kelola foto/gambar
 2. Login dengan role admin: username = `stikom`, dan password = `stikom`.
 
 ## Pembaruan
