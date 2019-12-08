@@ -46,31 +46,24 @@ Web Base Programming berbasis php framework Yii
 
 ## Screenshots
 1. Index Page
-
 ![Index Page](https://github.com/antoniusarie/yii-stikom/blob/master/screenshot/Yii-Index.png)
 
 2. Login Page
-
 ![Login Page](https://github.com/antoniusarie/yii-stikom/blob/master/screenshot/Yii-Login.png)
 
 3. Page Siswa - Admin
-
 ![Page Siswa - Admin](https://github.com/antoniusarie/yii-stikom/blob/master/screenshot/Yii-Siswa-Admin.png)
 
 4. Page Siswa - View
-
 ![Page Siswa - View](https://github.com/antoniusarie/yii-stikom/blob/master/screenshot/Yii-Siswa-View.png)
 
 5. Page Siswa - Update
-
 ![Page Siswa - Update](https://github.com/antoniusarie/yii-stikom/blob/master/screenshot/Yii-Siswa-Update.png)
 
 6. Page Menu - Admin
-
 ![Page Menu - Admin](https://github.com/antoniusarie/yii-stikom/blob/master/screenshot/Yii-Menu-Admin.png)
 
 7. Page User - Admin
-
 ![Page User - Admin](https://github.com/antoniusarie/yii-stikom/blob/master/screenshot/Yii-User-Admin.png)
 
 
