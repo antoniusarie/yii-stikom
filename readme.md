@@ -46,19 +46,19 @@ Web Base Programming berbasis php framework Yii
 
 ## Screenshots
 
-![Index Page](https://github.com/antoniusarie/yii-stikom/blob/master/screenshots/Yii-Index.png)
+![Index Page](https://github.com/antoniusarie/yii-stikom/blob/master/screenshot/Yii-Index.png)
 
-![Login Page](https://github.com/antoniusarie/yii-stikom/blob/master/screenshots/Yii-Login.png)
+![Login Page](https://github.com/antoniusarie/yii-stikom/blob/master/screenshot/Yii-Login.png)
 
-![Page Siswa - Admin](https://github.com/antoniusarie/yii-stikom/blob/master/screenshots/Yii-Siswa-Admin.png)
+![Page Siswa - Admin](https://github.com/antoniusarie/yii-stikom/blob/master/screenshot/Yii-Siswa-Admin.png)
 
-![Page Siswa - View](https://github.com/antoniusarie/yii-stikom/blob/master/screenshots/Yii-Siswa-View.png)
+![Page Siswa - View](https://github.com/antoniusarie/yii-stikom/blob/master/screenshot/Yii-Siswa-View.png)
 
-![Page Siswa - Update](https://github.com/antoniusarie/yii-stikom/blob/master/screenshots/Yii-Siswa-Update.png)
+![Page Siswa - Update](https://github.com/antoniusarie/yii-stikom/blob/master/screenshot/Yii-Siswa-Update.png)
 
-![Page Menu - Admin](https://github.com/antoniusarie/yii-stikom/blob/master/screenshots/Yii-Menu-Admin.png)
+![Page Menu - Admin](https://github.com/antoniusarie/yii-stikom/blob/master/screenshot/Yii-Menu-Admin.png)
 
-![Page User - Admin](https://github.com/antoniusarie/yii-stikom/blob/master/screenshots/Yii-User-Admin.png)
+![Page User - Admin](https://github.com/antoniusarie/yii-stikom/blob/master/screenshot/Yii-User-Admin.png)
 
 
 ## Penutup
