@@ -28,7 +28,7 @@ Web Base Programming berbasis php framework Yii
 2. Login dengan role admin: username = `stikom`, dan password = `stikom`.
 
 ## Update - 8/12/2019
-1. Tambah static page `API`, format `JSON` dengan method `POST`, list semua siswa.
+1. Tambah static page `API`, format `JSON` dengan method `GET`, list semua siswa.
 2. Tambah validasi file upload, jika field foto kosong, maka dipakai default `logo stikom/default.png`. Jika upload/update foto baru, akan `overwrite` foto lama.
 3. Tambah rule `user`, pada page Siswa `view`, role `Admin` semua data ditampilkan, sedangkan role `user` tidak/limited. 
 4. Tambah screenshot.
