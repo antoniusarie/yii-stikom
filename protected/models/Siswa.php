@@ -6,6 +6,7 @@
  * The followings are the available columns in table 'siswa':
  * @property string $no_siswa
  * @property string $nama_siswa
+ * @property string $alamat
  * @property string $images
  * @property string $kode_gender
  * @property string $kode_kelas
@@ -40,12 +41,13 @@ class Siswa extends CActiveRecord
 			array('no_siswa', 'unique'), // Duplicate - Existing record validation
 			array('no_siswa', 'length', 'max'=>4),
 			array('nama_siswa', 'length', 'max'=>50),
+			array('alamat', 'length', 'max'=>200),
 			array('images', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>false, 'except'=>'insert, update'), 
 			array('kode_gender, kode_kelas, kode_prodi', 'length', 'max'=>2),
 			array('jurusan', 'length', 'max'=>5),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('no_siswa, nama_siswa, images, kode_gender, kode_kelas, jurusan, kode_prodi', 'safe', 'on'=>'search'),
+			array('no_siswa, nama_siswa, alamat, images, kode_gender, kode_kelas, jurusan, kode_prodi', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -73,6 +75,7 @@ class Siswa extends CActiveRecord
 		return array(
 			'no_siswa' => 'No Siswa',
 			'nama_siswa' => 'Nama Siswa',
+			'alamat' => 'Alamat',
 			'images' => 'Foto',
 			'kode_gender' => 'Gender',
 			'kode_kelas' => 'Kelas',
@@ -101,6 +104,7 @@ class Siswa extends CActiveRecord
 
 		$criteria->compare('no_siswa',$this->no_siswa,true);
 		$criteria->compare('nama_siswa',$this->nama_siswa,true);
+		$criteria->compare('alamat',$this->alamat,true);
 		$criteria->compare('kode_gender',$this->kode_gender,true);
 		$criteria->compare('kode_kelas',$this->kode_kelas,true);
 		$criteria->compare('jurusan',$this->jurusan,true);

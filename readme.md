@@ -27,7 +27,13 @@ Web Base Programming berbasis php framework Yii
 1. Di menu `Siswa` bisa upload/kelola foto/gambar
 2. Login dengan role admin: username = `stikom`, dan password = `stikom`.
 
-## Pembaruan
+## Update - 8/12/2019
+1. Tambah static page `API`, format `JSON` dengan method `POST`, list semua siswa.
+2. Tambah validasi file upload, jika field foto kosong, maka dipakai default `logo stikom/default.png`. Jika upload/update foto baru, akan `overwrite` foto lama.
+3. Tambah rule `user`, pada page Siswa `view`, role `Admin` semua data ditampilkan, sedangkan role `user` tidak/limited. 
+4. Tambah screenshot.
+
+## Update - 21/11/2019
 1. Semua menu ditambahkan icon menggunakan `fontawesome`.
 2. Tabel menu ditambahkan field `icon` -> akomodasi nomor 1.
 3. Penambahan `custom.css` -> kostumisasi `Menu Navigasi`
@@ -35,8 +41,25 @@ Web Base Programming berbasis php framework Yii
 5. Sidebar `Operations` dikustomisasi ke button `bootstrap`.
 6. Menu `Admin/User` digabung menjadi satu navigasi `dropdown`.
 7. Semua menu dikostumisasi ke navigasi `bootstrap`.
-8. Error Page diset ke `site/error`.
+8. `Error Page` diset ke `site/error`.
 9. Role `User` diset bisa akses `index` dan `view` semua menu -> `UserController => Access Rules`.
+
+## Screenshots
+
+![Index Page](https://github.com/antoniusarie/yii-stikom/blob/master/screenshots/Yii-Index.png)
+
+![Login Page](https://github.com/antoniusarie/yii-stikom/blob/master/screenshots/Yii-Login.png)
+
+![Page Siswa - Admin](https://github.com/antoniusarie/yii-stikom/blob/master/screenshots/Yii-Siswa-Admin.png)
+
+![Page Siswa - View](https://github.com/antoniusarie/yii-stikom/blob/master/screenshots/Yii-Siswa-View.png)
+
+![Page Siswa - Update](https://github.com/antoniusarie/yii-stikom/blob/master/screenshots/Yii-Siswa-Update.png)
+
+![Page Menu - Admin](https://github.com/antoniusarie/yii-stikom/blob/master/screenshots/Yii-Menu-Admin.png)
+
+![Page User - Admin](https://github.com/antoniusarie/yii-stikom/blob/master/screenshots/Yii-User-Admin.png)
+
 
 ## Penutup
 Buat siapa saja yg kebetulan mau pakai, silahkan saja ya `teman-teman`.

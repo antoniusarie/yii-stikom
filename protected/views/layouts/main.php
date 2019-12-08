@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection">
 	<![endif]-->
 
+
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css">
 	
@@ -30,17 +31,35 @@
 	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"></script> -->
 	
 	<?php Yii::app()->clientScript->registerScriptFile("https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"); ?>
+	<?php Yii::app()->clientScript->registerScriptFile("https://cdnjs.cloudflare.com/ajax/libs/jquery-json/2.6.0/jquery.json.min.js"); ?>
 
 	<script type="text/javascript">
-	$(function() {
+	$(document).ready(function() {
 		$(".iconpicker").iconpicker({
   			hideOnSelect: true,
   			animation: true,
 		});
+		
 		$('#font').toggleClass("fas fa-font"); // toggles id element font by re-adding class fas fa-font (use with iconpicker)
-		$("#url").val("#"); // default URL value is #
+		
+		// default URL value is #
+		// if($("#Menu_url").val("")){
+		// 	$(this).val("#");
+		// };
+	
+    	var url = 'http://localhost/fire/services.php?fungsi=listsiswa'; // Method GET
+    	// var url = 'http://localhost/fire/services.php'; // Method POST
+    
+    	/* Print JSON di tag HTML DIV */
+    	$.getJSON(url, function(data){
+        	$('#json').html(
+            JSON.stringify(data, null, 3)
+        	);
+    	});
+
+    	$('#xml').html(url);
 	});
-	</script>	
+	</script>
 	
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -100,7 +119,7 @@
 			array(
 				'label'=>'<i class="fas fa-sign-in-alt"></i> Log In', 
 				'url'=>array('/site/login'), 
-				'visible'=>$user->isGuest,
+				'visible'=>$user->isGuest
 			),
 			array(
 				'label'=>'<i class="fas fa-user-circle"></i> ' .Yii::app()->user->name, 

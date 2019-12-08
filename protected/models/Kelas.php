@@ -52,7 +52,7 @@ class Kelas extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'kode' => 'Kode',
+			'kode' => 'Kode Kelas',
 			'keterangan' => 'Keterangan',
 		);
 	}

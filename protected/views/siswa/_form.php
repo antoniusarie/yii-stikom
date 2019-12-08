@@ -34,6 +34,11 @@
 		<?php echo $form->error($model,'nama_siswa'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'alamat'); ?>
+		<?php echo $form->textArea($model,'alamat',array('rows'=>3,'cols'=>50)); ?>
+		<?php echo $form->error($model,'alamat'); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'images'); ?>

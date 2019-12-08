@@ -44,17 +44,39 @@ $this->widget('zii.widgets.CMenu', array(
 		?>	
 </div>
 
-<img src="<?php echo Yii::app()->request->baseUrl.'/images/'.$model->images; ?>" width="140">
-<hr>
-
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'no_siswa',
 		'nama_siswa',
-		'kode_gender',
-		'kode_kelas',
-		'jurusan',
-		'kode_prodi',
+		array(
+			'type' => 'raw',
+			'label' => $model->getAttributeLabel('images'),
+			'value' => '<img src="'. Yii::app()->request->baseUrl.'/images/'.$model->images .'" width="140">',
+			'visible' =>!Yii::app()->user->isGuest && Yii::app()->user->checkAccess('admin')
+		),
+		array(
+			'label' => $model->getAttributeLabel('alamat'),
+			'value' => $model->alamat,
+			'visible' =>!Yii::app()->user->isGuest && Yii::app()->user->checkAccess('admin')
+		),
+		array(
+			'label' => $model->getAttributeLabel('gender'),
+			'value' => $model->relasigender->gender,
+			'visible' =>!Yii::app()->user->isGuest && Yii::app()->user->checkAccess('admin')
+		),
+		array(
+			'label' => $model->getAttributeLabel('kode_kelas'),
+			'value' => $model->relasikelas->keterangan,
+			'visible' =>!Yii::app()->user->isGuest && Yii::app()->user->checkAccess('admin')
+		),
+		array(
+			'label' => $model->getAttributeLabel('jurusan'),
+			'value' => $model->relasijurusan->nama_jurusan,
+		),
+		array(
+			'label' => $model->getAttributeLabel('kode_prodi'),
+			'value' => $model->relasiprodi->prodi
+		)
 	),
 )); ?>

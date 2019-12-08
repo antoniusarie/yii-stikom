@@ -31,7 +31,7 @@ class Menu extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('label', 'required'),
+			array('label, url', 'required'),
 			array('position', 'unique'),
 			array('status, position', 'numerical', 'integerOnly'=>true),
 			array('label, description', 'length', 'max'=>255),

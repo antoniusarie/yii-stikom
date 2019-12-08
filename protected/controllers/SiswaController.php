@@ -73,8 +73,8 @@ class SiswaController extends Controller
 		if(isset($_POST['Siswa']))
 		{
 
-			$model->attributes=$_POST['Siswa'];
-			$uploadFile=CUploadedFile::getInstance($model,'images');
+			$model->attributes = $_POST['Siswa'];
+			$uploadFile = CUploadedFile::getInstance($model,'images');
 
 			// Validation if file is empty fill with = default.png
 			if(!empty($uploadFile)){
@@ -109,7 +109,7 @@ class SiswaController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
-		$model=$this->loadModel($id);
+		$model = $this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -117,13 +117,23 @@ class SiswaController extends Controller
 		if(isset($_POST['Siswa']))
 		{
 			$_POST['Siswa']['images'] = $model->images;
-			$model->attributes=$_POST['Siswa'];
-			$uploadFile=CUploadedFile::getInstance($model,'images');
+			$model->attributes = $_POST['Siswa'];
+			$uploadFile = CUploadedFile::getInstance($model,'images');
+
+			if($model->images == "default.png") {
+				$random = rand(0,9999);
+				$time = time();  
+				$fileName = $random."-".$time.".".$uploadFile->getExtensionName();
+				$model->images = $fileName; // jika file yg lama adalah default.png maka nama file baru di random 
+			} else {
+				$fileName = $model->images; // jika tidak, nama file baru disamakan dengan nama file lama / overwrite existing 
+			}
+			
 			if($model->save()){
 				if(!empty($uploadFile)) 
 				{
-					$uploadFile->saveAs(dirname(Yii::app()->request->scriptFile).'/images/'.$model->images);
-				}
+					$uploadFile->saveAs(dirname(Yii::app()->request->scriptFile).'/images/'.$fileName);
+				} 
 				// $this->redirect(array('view','id'=>$model->no_siswa));
 				$this->redirect(array('admin'));
 			}

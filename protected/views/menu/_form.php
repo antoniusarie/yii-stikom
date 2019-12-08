@@ -58,7 +58,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'url'); ?>
-		<?php echo $form->textField($model,'url',array('id'=>'url','size'=>60,'maxlength'=>128)); ?>
+		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'url'); ?>
 		<br>
 		<p><i><b>Catatan :</b></i></p>
@@ -66,6 +66,8 @@
 			<i>Nama URL :</i> <span style="color:maroon">path-ke-folder-view</span><br>
 			<i>Contoh :</i><br>
 			<ol>
+				<li><b><span style="color:maroon">#</span></b> <i>(default empty)</i></li>	
+				<li><b><span style="color:maroon">static page</span></b> <i>(site/page&view=[page name])</i></li>	
 				<li><b><span style="color:maroon">menu</span></b> <i>(menu -> page index)</i></li>	
 				<li><b><span style="color:maroon">menu/admin</span></b> <i>(menu -> page admin)</i></span>	
 			</ol>

@@ -13,13 +13,12 @@
 	<?php echo CHtml::encode($data->nama_siswa); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('kode_kelas')); ?>:</b>
-	<?php echo CHtml::encode($data->kode_kelas); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('jurusan')); ?>:</b>
-	<?php echo CHtml::encode($data->jurusan); ?>
+	<?php echo CHtml::encode($data->relasijurusan->nama_jurusan); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('kode_prodi')); ?>:</b>
+	<?php echo CHtml::encode($data->relasiprodi->prodi); ?>
+	<br />
 
 </div>

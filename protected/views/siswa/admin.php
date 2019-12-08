@@ -78,6 +78,7 @@ $('.search-form form').submit(function(){
 			'header'=>'Foto',
 			'value'=>'CHtml::image("images/$data->images", "", array("width"=>70))',
 		),
+		'alamat',
 		array(
 			'name'=>'namaGender',
 			'type'=>'raw',
