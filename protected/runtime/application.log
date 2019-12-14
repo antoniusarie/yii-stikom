@@ -8434,3 +8434,104 @@ in C:\laragon\www\stikom\index.php (13)
 2019/12/08 21:56:34 [warning] [application] Failed to set unsafe attribute "images" of "Siswa".
 in C:\laragon\www\stikom\protected\controllers\SiswaController.php (120)
 in C:\laragon\www\stikom\index.php (13)
+2019/12/14 18:29:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uas".' in C:\laragon\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('uas')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=uas
+HTTP_REFERER=http://stikom.arie.id/index.php?r=menu/view&id=7
+---
+2019/12/14 18:29:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uas".' in C:\laragon\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('uas')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=uas
+HTTP_REFERER=http://stikom.arie.id/
+---
+2019/12/14 18:31:00 [warning] [application] Failed to set unsafe attribute "images" of "Siswa".
+in C:\laragon\www\stikom\protected\controllers\SiswaController.php (120)
+in C:\laragon\www\stikom\index.php (13)
+2019/12/14 18:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uas".' in C:\laragon\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('uas')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=uas
+HTTP_REFERER=http://stikom.arie.id/index.php?r=siswa/admin
+---
+2019/12/14 18:52:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "akutansi".' in C:\laragon\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('akutansi')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=akutansi
+HTTP_REFERER=http://stikom.arie.id/index.php?r=menu/view&id=8
+---
+2019/12/14 18:52:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "akutansi".' in C:\laragon\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('akutansi')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=akutansi
+HTTP_REFERER=http://stikom.arie.id/index.php?r=akutansi
+---
+2019/12/14 18:52:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "akutansi".' in C:\laragon\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('akutansi')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=akutansi
+HTTP_REFERER=http://stikom.arie.id/index.php?r=siswa
+---
+2019/12/14 18:52:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "akutansi".' in C:\laragon\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('akutansi')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=akutansi
+HTTP_REFERER=http://stikom.arie.id/index.php?r=siswa
+---
+2019/12/14 18:52:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "akutansi".' in C:\laragon\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('akutansi')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=akutansi
+HTTP_REFERER=http://stikom.arie.id/index.php?r=akutansi
+---
+2019/12/14 18:52:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "akutansi".' in C:\laragon\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('akutansi')
+#1 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=akutansi
+HTTP_REFERER=http://stikom.arie.id/index.php?r=akutansi
+---
+2019/12/14 19:42:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\laragon\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\laragon\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\laragon\www\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\laragon\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\laragon\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\laragon\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\laragon\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\laragon\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\laragon\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('akutansi/admin')
+#9 C:\laragon\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\laragon\www\stikom\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=akutansi/admin
+HTTP_REFERER=http://stikom.arie.id/index.php?r=akutansi
+---

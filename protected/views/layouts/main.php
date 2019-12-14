@@ -46,18 +46,6 @@
 		// if($("#Menu_url").val("")){
 		// 	$(this).val("#");
 		// };
-	
-    	var url = 'http://localhost/fire/services.php?fungsi=listsiswa'; // Method GET
-    	// var url = 'http://localhost/fire/services.php'; // Method POST
-    
-    	/* Print JSON di tag HTML DIV */
-    	$.getJSON(url, function(data){
-        	$('#json').html(
-            JSON.stringify(data, null, 3)
-        	);
-    	});
-
-    	$('#xml').html(url);
 	});
 	</script>
 	
