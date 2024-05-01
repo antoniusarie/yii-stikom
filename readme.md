@@ -68,4 +68,4 @@ Web Base Programming berbasis php framework Yii
 
 
 ## Penutup
-Buat siapa saja yg kebetulan mau pakai, silahkan saja ya `teman-teman`.
+Sekian dan terimakasih.
